@@ -1,0 +1,34 @@
+How many database tables do you think you'll need to pull off this project?
+
+  - So As discussed in class on Tuesday I think there should be three tables.
+  1. We need a database and I am pretty sure we decided on a DB name of VerifyAllowedStudent
+    Table Name:
+    1. AllowedStudents
+    2. ReportingTable
+    3. SettingTable
+
+
+What data would each table hold?
+
+  Inside of each table as previously listed:
+    1.AllowedStudents
+      - StudentIndexId - Int - PrimaryKey - AutoIncrement
+      - UserName       - VarChar (45)
+      - FirstName      - Varchar (45)
+      - LastName       - VarChar (45)
+
+    2.ReportingTable
+      - StudentIndexId - Int - ForeignKey from AllowedStudents table
+      - StartTime      - DateTime()
+      - EndTime        - DateTime()
+
+    3.Settings
+      - SettingName    - VarChar(45)
+      - SettingValue   - VarChar(45)
+
+Why do you think it's important to break up the data into these tables?
+
+  With normalizing this amount of data for this project it should make it easier for us to control the database.
+As well creating the data that will be inserted into the database, and used to output for the ReportingTable.
+Theoretically the data that will be inserted into the database easier to control between the AllowedStudents table ReportingTable.
+Where as the Settings table will be separate from the two main tables and will be used to help set toggles for additional features that will be created in the future.
