@@ -1,0 +1,10 @@
+Login
+  •	Should sole creation of the student users be left the teacher or should the student be able to sign up through a “Sign up” page.
+  •	If we use the form one of the hard values would be “Student” since only the student would use this page to create their account.
+  •	The form would need a toggle to switch between “Sign up” and “Login”. “Sign up” would be creating and inserting data into the data base. Where “Login” would check and verify the data.
+
+Admin
+  •	Admin would be able to create and delete student users.
+  •	Clickable menu that would query the database for information on a student’s clock in/out times.
+  •	Ability to toggle the emails that are sent out to the “Admin Teachers”?
+  •	Possible ability to send an email to all the students?
