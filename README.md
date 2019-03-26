@@ -9,7 +9,7 @@ Scenario: The student worker is clocking in for work at the Student Help Desk.
 - Given: The user gets to work.
 - When: The user is ready to clock in for work.
 - Then: The user will visit the LocalHost web site to login for work.
-- And: Login with their user name and password.
+- And: Login with their user name.
 - Then: The user will click the Clock in button.
 
 Scenario: The student worker is clocking out of work from the Student Help Desk.
