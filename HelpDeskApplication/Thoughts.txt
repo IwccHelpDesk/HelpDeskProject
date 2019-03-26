@@ -3,3 +3,5 @@ Admin
   •	Clickable menu that would query the database for information on a student’s clock in/out times.
   •	Ability to toggle the emails that are sent out to the “Admin Teachers”?
   •	Possible ability to send an email to all the students?
+
+  test edit
