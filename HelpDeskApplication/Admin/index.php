@@ -1,6 +1,4 @@
 <?php 
-    include 'Model/*.php';
-    include 'View/header.php';
-        // logic here
-    include 'View/footer.php';
+        require_once '..Model/database.php';
+        require_once '..Model/admin_db.php';
 ?>
