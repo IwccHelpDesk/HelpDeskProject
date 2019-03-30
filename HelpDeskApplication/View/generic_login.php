@@ -9,7 +9,7 @@
                     <br>
                     <input type="username" class="form-control" style="width: 20%;  display: inline" id="UserName" placeholder="Enter your school username">
                </div>
-               <button type="submit" class="btn btn-primary">Submit</button>
+               <button type="submit" class="btn btn-primary">Login</button>
           </div>
      </form>
 <?php include 'footer.php'; ?>
