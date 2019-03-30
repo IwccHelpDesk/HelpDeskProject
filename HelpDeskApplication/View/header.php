@@ -7,4 +7,4 @@
             crossorigin="anonymous">
         </head>
 
-    <body>
+    <body class="p-3 mb-2 bg-info text-white justify-content-center">
