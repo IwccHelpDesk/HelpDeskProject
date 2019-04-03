@@ -1,7 +1,7 @@
 <?php include '../View/header.php'; ?>
 
 <div style="text-align: center">
-    <table class="table table-sm table-dark" id="AdminTable" style="width: 60%; margin: 0 auto; text-align: center">
+    <table class="table table-sm table-dark" id="AdminTable" style="width: 55%; margin: 0 auto; text-align: center">
         <h2>Current Admin Users</h2>
         <thead>
             <tr>
@@ -17,10 +17,8 @@
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>@mdo</td>
-                <td>
-                    <form>
+                <td style="width: 15%">
                         <button type="submit" class="btn btn-danger" value="Delete User">Delete User</button>
-                    </form>
                 </td>
             </tr>
         </tbody>
@@ -29,7 +27,7 @@
 <br>
 <hr>
 <div style="text-align: center">
-    <table class="table table-sm table-dark" id="UserTable" style="width: 60%; margin: 0 auto;">
+    <table class="table table-sm table-dark" id="UserTable" style="width: 55%; margin: 0 auto;">
         <h2>Current Users</h2>
         <thead>
             <tr>
