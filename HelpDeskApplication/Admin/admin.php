@@ -18,7 +18,7 @@
                 <td>Otto</td>
                 <td>@mdo</td>
                 <td style="width: 15%">
-                        <button type="submit" class="btn btn-danger" value="Delete User">Delete User</button>
+                    <button type="submit" class="btn btn-danger" value="Delete User">Delete User</button>
                 </td>
             </tr>
         </tbody>
@@ -59,11 +59,6 @@
 <form>
     <div style="text-align: center;">
         <div class="form-group">
-            <label for="userName">UserName</label>
-            <input type="text" class="form-control" style="width: 10%;  display: inline" id="userName"
-                placeholder="UserName">
-        </div>
-        <div class="form-group">
             <label for="firstName">FirstName</label>
             <input type="text" class="form-control" style="width: 10%;  display: inline" id="firstName"
                 placeholder="FirstName">
@@ -72,6 +67,11 @@
             <label for="lastName">LastName</label>
             <input type="text" class="form-control" style="width: 10%;  display: inline" id="lastName"
                 placeholder="LastName">
+        </div>
+        <div class="form-group">
+            <label for="userName">UserName</label>
+            <input type="text" class="form-control" style="width: 10%;  display: inline" id="userName"
+                placeholder="UserName">
         </div>
         <div class="form-group">
             <label for="roleSelect">UserRole</label>
