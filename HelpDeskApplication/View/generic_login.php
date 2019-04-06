@@ -3,7 +3,7 @@
 <?php include 'header.php'; ?>
      <!-- user login -->
      <form>
-          <div style="text-align: center">
+          <div style="text-align: center; margin-top: 16%">
                <h2>Help Desk Login</h2>
                <div class="form-group">
                     <br>
