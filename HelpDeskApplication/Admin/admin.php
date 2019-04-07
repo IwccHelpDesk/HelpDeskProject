@@ -55,7 +55,6 @@
 </div>
 <br>
 <hr>
-
 <form>
     <div style="text-align: center;">
         <div class="form-group">
