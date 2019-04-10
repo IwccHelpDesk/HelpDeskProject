@@ -23,3 +23,8 @@ WHERE userId = 1;
 # Deleting the users time entries
 DELETE FROM ReportingTable
 WHERE userId = 1;
+
+# Get users role and userId
+SELECT userIndexId ,UserRole 
+FROM Users
+WHERE userName = 'testAdmin'
