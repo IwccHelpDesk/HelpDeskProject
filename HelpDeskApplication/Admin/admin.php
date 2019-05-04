@@ -57,23 +57,25 @@
 <hr>
 <form>
     <div style="text-align: center;">
+        <h2>Add Users</h2>
+        <br>
         <div class="form-group">
-            <label for="firstName">FirstName</label>
+            <label for="firstName">FirstName: </label>
             <input type="text" class="form-control" style="width: 10%;  display: inline" id="firstName"
                 placeholder="FirstName">
         </div>
         <div class="form-group">
-            <label for="lastName">LastName</label>
+            <label for="lastName">LastName: </label>
             <input type="text" class="form-control" style="width: 10%;  display: inline" id="lastName"
                 placeholder="LastName">
         </div>
         <div class="form-group">
-            <label for="userName">UserName</label>
+            <label for="userName">UserName: </label>
             <input type="text" class="form-control" style="width: 10%;  display: inline" id="userName"
                 placeholder="UserName">
         </div>
         <div class="form-group">
-            <label for="roleSelect">UserRole</label>
+            <label for="roleSelect">UserRole: </label>
             <select id="roleSelect" class="form-control" style="width: 10%;  display: inline">
                 <option selected>Admin</option>
                 <option>Student</option>
