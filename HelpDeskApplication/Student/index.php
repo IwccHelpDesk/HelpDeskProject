@@ -1,6 +1,8 @@
 <?php 
     require_once '../Model/database.php';
     require_once '../Model/student_db.php';
+    require_once '../Model/generic_db.php';
+    date_default_timezone_set('America/Chicago');
 
     $action = filter_input(INPUT_POST, 'action');
     if ($action == NULL) {
@@ -12,6 +14,12 @@
 
     switch ($action) {
         case 'student': 
+            include('student.php');
+            break;
+        case 'punch_in':
+            session_start();
+            $user = get_user($_SESSION['username']);
+            punch_in($user[0]);
             include('student.php');
             break;
     }

@@ -1,6 +1,7 @@
 <?php 
 require_once('Model/database.php');
 require_once('Model/generic_db.php');
+date_default_timezone_set('America/Chicago');
 	
 	$action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
@@ -27,6 +28,7 @@ switch ($action) {
 			else
 			{
 				session_start();
+				$_SESSION['username'] = $username;
 				header('location:Student/index.php');
 			}
 		} else {

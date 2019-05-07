@@ -1,6 +1,7 @@
 <?php 
         require_once '../Model/database.php';
         require_once '../Model/admin_db.php';
+        date_default_timezone_set('America/Chicago');
 
         $action = filter_input(INPUT_POST, 'action');
         if ($action == NULL) {

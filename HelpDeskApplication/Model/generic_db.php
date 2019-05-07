@@ -1,11 +1,11 @@
 <?php
 
 //A function that will get user names of all users.
-function get_users($username){
+function get_user($username){
 	global $db;
 	//var_dump($db);
 	//print_r($db);
-	$query = 'SELECT userName FROM Users
+	$query = 'SELECT userIndexId FROM Users
 			  WHERE userName = :username';
 	$statement = $db->prepare($query);
 	$statement->bindValue(':username', $username);
