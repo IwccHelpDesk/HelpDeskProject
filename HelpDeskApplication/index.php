@@ -13,13 +13,11 @@ if ($action == NULL) {
 }
 	
 	$username = filter_input(INPUT_POST, 'UserName');
-	$users = get_users($username);
-	$goodUser = false;
+	$role = user_role($username);
 	
-	
-	if($goodUser)
+
+	if($role != NULL)
 	{
-		$role = user_role($username);
 		if($role == "Admin")
 		{
 			session_start();
