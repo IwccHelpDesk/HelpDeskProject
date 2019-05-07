@@ -19,7 +19,7 @@ function get_users($username){
 //A function that will return the role of the desired user.
 function user_role($username) {
     global $db;
-    $query = 'SELECT userRole FROM Users
+    $query = 'SELECT UserRole FROM Users
               WHERE userName = :username';
     $statement = $db->prepare($query);
     $statement->bindValue(':username', $username);

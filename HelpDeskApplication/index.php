@@ -1,8 +1,6 @@
 <?php 
 require_once('Model/database.php');
 require_once('Model/generic_db.php');
-include('View/generic_login.php');
-    // logic to check if student or admin and will redirect to the admin folder or student.
 	
 	$action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
@@ -17,20 +15,22 @@ switch ($action) {
 		include ('View/generic_login.php');
 		break;
 	case 'login_test':
-		$username = filter_input(INPUT_POST, 'UserName');
+		$username = filter_input(INPUT_POST, 'userName');
 		$role = user_role($username);
-		if($role != NULL)
+		if($role[0] != NULL)
 		{
-			if($role == "Admin")
+			if($role[0] == "Admin")
 			{
 				session_start();
-				include ('Admin/verify_password.php');
+				header('location:Admin/index.php');
 			}
 			else
 			{
 				session_start();
-				include ('Student/student.php');
+				header('location:Student/index.php');
 			}
+		} else {
+			include ('View/generic_login.php');
 		}
 		break;
 }
