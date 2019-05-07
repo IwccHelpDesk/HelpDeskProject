@@ -21,7 +21,7 @@ function user_role($username) {
     global $db;
     $query = 'SELECT userRole FROM Users
               WHERE userName = :username';
-    $statement = $db->prepare($queryUsers);
+    $statement = $db->prepare($query);
     $statement->bindValue(':username', $username);
     $statement->execute();
     $row = $statement->fetch();
