@@ -19,7 +19,7 @@
         <form action="." method="post">
             <input type="hidden" name="action" value="punch_out">
             <div>
-                <input type="submit" class="btn btn-danger" value='Clock in'>
+                <input type="submit" class="btn btn-danger" value='Clock out'>
                 <br>
                 <span id="clock-out-Time">Clock Out Time: <?php echo '' ?></span>
                 <!-- Disable this button if the user has not logged on for the day -->
