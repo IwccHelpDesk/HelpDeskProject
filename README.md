@@ -4,11 +4,6 @@ This will contain the Project for the IWCC Help Desk application.
 # Applications purpose
 The purpose of this application is to track time of students that work for Iowa Western Community College. In specific they would be working for the student Help Desk.
 
-# Current Commit History:
- - [Commit History: Development](https://github.com/IwccHelpDesk/HelpDeskProject/commits/development)
-
- - [Commit History: Master](https://github.com/IwccHelpDesk/HelpDeskProject/commits/master)
-
 # Application Use Case:
 Scenario: The student worker is clocking in for work at the Student Help Desk.
 - Given: The user gets to work.
