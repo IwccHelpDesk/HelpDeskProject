@@ -1,5 +1,5 @@
 <?php include '../View/header.php'; ?>
-
+<!--Hello world-->
 <div style="text-align: center">
     <table class="table table-sm table-dark" id="UserTable" style="width: 55%; margin: 0 auto;">
         <h2>Current Users</h2>
