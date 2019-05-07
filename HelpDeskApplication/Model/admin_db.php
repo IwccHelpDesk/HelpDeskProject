@@ -77,5 +77,16 @@
         }
     }
     
+    function admin_login() {
+        global $db;
+        $query = 'SELECT settingValue FROM Settings
+                  WHERE settingName = :setting';
+        $statement = $db->prepare($query);
+        $statement->bindValue(':setting', "adminPass");
+        $statement->execute();
+        $row = $statement->fetch();
+        $statement->closeCursor();
+        return $row;
+    }
 
 ?>

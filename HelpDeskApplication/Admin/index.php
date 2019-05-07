@@ -7,10 +7,23 @@
                 $action = filter_input(INPUT_GET, 'action');
         }
         if ($action == NULL) {
-                $action = 'index';
+                $action = 'login';
         }
 
         switch($action) {
+                case 'login':
+                        include('verify_password.php');
+                        break;
+                case 'login_test':
+                        $pwd = filter_input(INPUT_POST, 'pwd');
+                        $admin_pass = admin_login();
+                        if ($pwd === $admin_pass[0]) {
+                                $users = get_users();
+                                include('admin.php');
+                        } else {
+                                include('verify_password.php');  
+                        }
+                        break;
                 case 'index':
                         $users = get_users();
                         include('admin.php');
