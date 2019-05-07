@@ -11,23 +11,27 @@ if ($action == NULL) {
         $action = 'login';
     }
 }
-	
-	$username = filter_input(INPUT_POST, 'UserName');
-	$role = user_role($username);
-	
 
-	if($role != NULL)
-	{
-		if($role == "Admin")
+switch ($action) {
+	case 'login':
+		include ('View/generic_login.php');
+		break;
+	case 'login_test':
+		$username = filter_input(INPUT_POST, 'UserName');
+		$role = user_role($username);
+		if($role != NULL)
 		{
-			session_start();
-			include ('Admin/verify_password.php');
+			if($role == "Admin")
+			{
+				session_start();
+				include ('Admin/verify_password.php');
+			}
+			else
+			{
+				session_start();
+				include ('Student/student.php');
+			}
 		}
-		else
-		{
-			session_start();
-			include ('Student/student.php');
-		}
-	}
-	
+		break;
+}
 ?>

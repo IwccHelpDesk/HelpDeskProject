@@ -3,6 +3,7 @@
 <?php include 'header.php'; ?>
      <!-- user login -->
      <form action="." method="post" id="login">
+          <input type="hidden" name="action" value="login_test">
           <div style="text-align: center; margin-top: 16%">
                <h2>Help Desk Login</h2>
                <div class="form-group">
