@@ -1,5 +1,5 @@
 <?php 
-    $dsn = 'mysql:host=student.ecc.iwcc.edu;dbname=';
+    $dsn = 'mysql:host=student.ecc.iwcc.edu;dbname=VerifyHelpDesk';
     $username = 'iwcchelpdesk';
     $password = 'help2019';
     
