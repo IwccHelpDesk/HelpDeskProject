@@ -9,7 +9,7 @@
             <div>
                 <input type="submit" class="btn btn-success" value='Clock in'>
                 <br>
-                <span id="clock-in-Time">Clock In Time: <?php echo '' ?> </span>
+                <!-- <span id="clock-in-Time">Clock In Time: <?php echo '' ?> </span> -->
                 <!-- if the user has not logged in then maybe we should say, "You have not logged in yet" -->
 
                 <!-- Once the user comes back and they go to logout, the login button should be disabled -->
@@ -21,7 +21,7 @@
             <div>
                 <input type="submit" class="btn btn-danger" value='Clock out'>
                 <br>
-                <span id="clock-out-Time">Clock Out Time: <?php echo '' ?></span>
+                <!--<span id="clock-out-Time">Clock Out Time: <?php echo '' ?></span> -->
                 <!-- Disable this button if the user has not logged on for the day -->
 
                 <!-- Enable this button only when the user has a start time for the day so they would then be allowed to logout for the shift -->
