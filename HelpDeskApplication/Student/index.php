@@ -18,12 +18,14 @@
             break;
         case 'punch_in':
             session_start();
+            //$start = getStartTime($_SESSION['username']);
             $user = get_user($_SESSION['username']);
             punch_in($user[0]);
             include('student.php');
             break;
         case 'punch_out':
             session_start();
+            //$startTime = getStartTime($_SESSION['username']);
             $user = get_user($_SESSION['username']);
             punch_out($user[0]);
             include('student.php');
