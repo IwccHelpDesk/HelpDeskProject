@@ -12,6 +12,9 @@
         </thead>
         <tbody>
         <?php foreach ($users as $user) : ?>
+        <?php if($user['userName'] == "iwccAdmin") : ?>
+
+        <?php else: ?>
             <tr>
                 <th scope="row"><?php echo $user['userIndexId']; ?></th>
                 <td><?php echo $user['firstName']; ?></td>
@@ -35,6 +38,7 @@
                     </form>
                 </td>
             </tr>
+            <?php endif; ?>
             <?php endforeach; ?>
         </tbody>
     </table>

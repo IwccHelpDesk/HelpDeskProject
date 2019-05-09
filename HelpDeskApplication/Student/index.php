@@ -22,5 +22,11 @@
             punch_in($user[0]);
             include('student.php');
             break;
+        case 'punch_out':
+            session_start();
+            $user = get_user($_SESSION['username']);
+            punch_out($user[0]);
+            include('student.php');
+            break;
     }
 ?>

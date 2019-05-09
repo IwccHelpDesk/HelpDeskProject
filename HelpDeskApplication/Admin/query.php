@@ -12,8 +12,8 @@
         <tbody>
         <?php foreach ($user_info as $data) : ?>
             <tr>
-                <th scope="row"><?php echo $data['startTime']; ?></th>
-                <td><?php echo $user['endTime']; ?></td>
+                <th scope="row"><?php echo date( "n-j-y h:i A",strtotime($data['startTime'])); ?></th>
+                <td><?php echo date( "n-j-y h:i A",strtotime($data['endTime'])); ?></td>
             </tr>
             <?php endforeach; ?>
         </tbody>
